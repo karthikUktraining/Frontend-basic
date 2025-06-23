@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #signUp {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+
+        label,
+        input {
+            display: block;
+        }
+
+        label {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="signUp">
+        <h2>Sign Up</h2>
+        <form>
+            <label>Username<input type="text" name="" id="userName"></label>
+            <label>Phone Number<input type="text" name="" id="phoneNumber"></label>
+            <label>Email ID<input type="email" name="" id="email"></label>
+            <label>Password<input type="password" name="" id="password"></label>
+            <label>Confirm Password<input type="password" name="" id="confirmPassword"></label>
+            <label><input type="submit" name="" id="submit"></label>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>

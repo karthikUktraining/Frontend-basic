@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>dom</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            background-color: bisque;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .inputDiv {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .divNum {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+
+        }
+
+        .opsDiv {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .divOpsNum {
+            display: flex;
+
+            width: 50vw;
+            justify-content: space-evenly;
+            gap: 50px;
+        }
+
+        button {
+            width: 30px;
+            height: 30px;
+        }
+
+        .resetBtn {
+            width: 75px;
+            height: 30px;
+        }
+
+        input {
+            height: 50px;
+        }
+
+        /*  .result {
+            visibility: hidden;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <div class="inputDiv">
+        <input type="number" name="num1" id="num1" value="">
+        <input type="number" name="num2" id="num2" value="">
+        <p class="result" id="result">result:</p>
+
+    </div>
+    <div class="divOpsNum">
+        <div class="divNum">
+            <!--   <button class="numBtn" onclick="addNumberInInput(1)">1</button>
+            <button class="numBtn" onclick="addNumberInInput(2)">2</button>
+            <button class="numBtn" onclick="addNumberInInput(3)">3</button>
+            <button class="numBtn" onclick="addNumberInInput(4)">4</button>
+            <button class="numBtn" onclick="addNumberInInput(5)">5</button>
+            <button class="numBtn" onclick="addNumberInInput(6)">6</button>
+            <button class="numBtn" onclick="addNumberInInput(7)">7</button>
+            <button class="numBtn" onclick="addNumberInInput(8)">8</button>
+            <button class="numBtn" onclick="addNumberInInput(9)">9</button>
+            <button class="numBtn" onclick="addNumberInInput(0)">0</button> -->
+        </div>
+        <div class="opsDiv">
+            <!--  <button onclick="add()"> + </button>
+            <button onclick="sub()">-</button>
+            <button onclick="multiply()">*</button>
+            <button onclick="div()">/</button>
+            <button onclick="mod()">%</button>
+            <button class="resetBtn" onclick="reset()">reset</button> -->
+        </div>
+    </div>
+
+
+
+
+    <script src="dom.js"></script>
+</body>
+
+</html>

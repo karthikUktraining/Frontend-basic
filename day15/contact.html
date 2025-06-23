@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 10px;
+            margin: 10px;
+            background-color: #f2b264;
+            height: 100%;
+            width: 100vw;
+            border: solid 1px black;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+
+        }
+
+
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            border: solid 1px black;
+            margin: 10px 0;
+            background-color: rgba(241, 45, 45, 0.1);
+            align-items: center;
+        }
+
+        label,
+        input {
+            font-size: small;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+
+        }
+
+        textarea {
+            grid-column-start: 1;
+            grid-column-end: -1;
+
+        }
+
+        @media (max-width:800px) {
+            body {
+                grid-template-columns: 1fr;
+            }
+
+            form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+
+            }
+        }
+
+        @media (max-width:600px) {
+            body {
+                grid-template-columns: 1fr;
+            }
+
+            form {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+
+            }
+        }
+
+        .orange {
+            background-color: #f2b264;
+        }
+
+        .maxWH {
+            height: 90vh;
+            width: 90vw;
+        }
+
+        .justify-centre {
+            display: flex;
+            justify-content: center;
+        }
+
+        .align-centre {
+            display: flex;
+            align-items: center;
+        }
+
+        .flexColumn {
+            flex-direction: column;
+        }
+
+        .solidBorder {
+            border: solid 1px black;
+            width: 100%;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="flex-container ">
+        <h2>Connect with US</h2>
+        <div class="solidBorder justify-centre  flexColumn align-centre">
+            <h2>Our Location</h2>
+            <p>Baithul Thahoor, H18, Paradise colony, near MSS health centre, AWH</p>
+            <p>college road, p.o Kallai, Calicut, Kerala Pin- 673003</p>
+        </div>
+
+        <div class="solidBorder justify-centre  flexColumn align-centre">
+            <h2>Contact Us</h2>
+            <p>karthikdinthakurthi@gmail.com</p>
+            <p>+393485659085</p>
+        </div>
+
+    </div>
+    <div class="flex-container">
+        <h2>Inquiries </h2>
+        <form action="">
+            <input placeholder="First Name" type="text" class="name">
+            <input placeholder="Last Name" type="text" class="lastname">
+            <input placeholder="Email" type="email" class="email">
+            <input placeholder="Phone Number" type="text" class="phonenumber">
+            <textarea placeholder="Message" type="text" class="name"></textarea>
+            <input type="submit" name="" id="">
+            <input type="reset">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

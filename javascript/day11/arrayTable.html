@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        input {
+            display: block;
+        }
+
+        table {
+            width: 70vw;
+            height: auto;
+            border: 2px solid;
+
+        }
+
+        tr {
+            background-color: aliceblue;
+            width: 100%;
+            height: 50px;
+        }
+
+        td,
+        th {
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mapDiv">
+        <label for="brand">brand</label>
+        <input id="brand" type="text">
+        <label for="brand">model</label>
+        <input id="model" type="number">
+        <label for="brand">color</label>
+        <input id="color" type="text">
+        <label for="brand">airbag</label>
+        <input id="airbags" type="number">
+
+        <button type="submit" onclick="filterCar()">submit</button>
+    </div>
+
+
+    <script src="arrayTable.js" async defer></script>
+</body>
+
+</html>

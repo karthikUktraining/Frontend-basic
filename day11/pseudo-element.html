@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PSeudo Element</title>
+    <style>
+        p::first-letter {
+            color: burlywood;
+            font-size: xx-large;
+        }
+
+        p::first-line {
+            color: aqua;
+            font-weight: 900;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li::marker {
+            color: blueviolet;
+            content: "✅";
+        }
+
+        li:nth-child(1)::after {
+            content: "  🍎";
+            color: aqua
+        }
+
+        li:nth-child(2)::after {
+            content: "  🍌";
+            color: aqua
+        }
+
+        li:nth-child(3)::after {
+            content: "  🥭";
+            color: aqua
+        }
+
+        .main-p::after {
+            content: " ❗";
+        }
+
+
+        ::selection {
+            color: white;
+            background-color: rgb(194, 31, 31);
+        }
+
+
+
+        /* sytanx 
+            element::pseudo-element{
+            property:value;
+            }
+            */
+    </style>
+</head>
+
+<body>
+
+    <h2>Pseudo Element</h2>
+    <p class="main-p">start with double colon </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellat rerum explicabo deleniti minus possimus,
+        laudantium ducimus illum ratione at officiis quae consequatur recusandae necessitatibus hic dicta perspiciatis
+        aut doloremque dolore voluptate quidem voluptatibus? Neque, in quaerat accusantium voluptates iste ullam
+        similique quos dicta ut alias aliquam suscipit dolor quisquam!</p>
+    <ol>
+        <li>apple</li>
+        <li>bannana</li>
+        <li>pineapple</li>
+
+    </ol>
+</body>
+
+</html>

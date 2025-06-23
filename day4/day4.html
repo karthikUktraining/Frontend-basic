@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>HtmlCss</title>
+    <style>
+        body {
+            box-sizing: border-box;
+
+            background-color: burlywood;
+            /*
+             margin: 2%top 2%left  2%bottom  2%right ;
+             margin 2%top and bottom 2%left and right
+             margin 2%
+             same for padding as well above method 
+            */
+            color: blueviolet;
+            margin: 2%;
+            padding: 2%;
+            /* border: 10px solid blue  write in any order*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue;
+            border-radius: 2%;
+            /*    alt + shift + A (for commenting)*/
+            /*   border-top-right-radius: 2%;
+            border-bottom-right-radius: 2%;
+            border-top-left-radius: 2%;
+            border-bottom-right-radius: 2%; */
+            width: 96%;
+        }
+
+        h4 {
+
+            background-color: rgb(217, 124, 124);
+        }
+
+        /*if u name the tag or element with id u have start with # id name defined (#div1) as show below*/
+        #div1 {
+            box-sizing: inherit;
+            color: whitesmoke;
+            background-color: black;
+            height: 100%;
+            padding: 5%;
+        }
+
+        /*if u name the tag or element with class u have start with . class name defined (#div1) as show below*/
+
+        .color-chartreuse {
+            background-color: chartreuse;
+        }
+    </style>
+    <link rel="stylesheet" href="day4.css">
+</head>
+
+<body>
+    <h2> there 3 types of css</h2>
+    <div id="div1">
+
+        <h3 style="background-color: aqua;">Inline CSS</h3>
+        <h4>internal css</h4>
+        <p>external Css</p>
+        <div class="color-chartreuse">block level element which take 100% with of the parent
+        </div>
+        <br>
+        <span class="color-chartreuse">inline level element which take width only with of cotent </span>
+    </div>
+
+
+</body>
+
+</html>

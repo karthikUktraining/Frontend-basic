@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <Style>
+        .container1
+        {
+            display : grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-auto-rows: 100px;
+            grid-auto-columns: 80px;
+            grid-gap : 20px;
+            column-gap: 50px;
+            row-gap: 10px;
+           /*  for rows - minmax(height(px), auto)
+               for Columns - minmax(length(px), auto)  this funtion is for
+               auto sizing according to the content fits in the Box with the given
+               dimensions
+               auto = it will take itself of length and height of the with the content */
+        }
+       
+        
+        .container2
+        {
+            display : grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-auto-rows: 100px;
+            grid-auto-columns: 80px;
+            
+            grid-gap : 20px;
+        } 
+        .items 
+        {
+            background-color: rgb(204, 127, 34);
+            border: 3px rgb(39, 15, 15) solid;
+            border-radius: 1px;
+        }
+
+        #item-2 
+        {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        #item-1
+        {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .item-11-Container
+        {
+            display : grid;
+            grid-template-columns: repeat(3, 1fr);
+           
+        }
+        .nested-item 
+        {
+            border: 5px  white solid;
+            border-radius: 3px;
+            background-color: rgb(196, 196, 231);
+            grid-gap: 10px;
+        
+        }
+       </style>
+    
+</head>
+<body>
+    <div class = "Container1">
+        <div class="items" id = "item-1">Lorem ipsum dolor, sit amet consectetur 
+            adipisicing elit. At quisquam facilis ad, ea inventore officia eligendi obcaecati vero illum ipsum
+             consequatur? Asperiores modi odit deleniti repellat beatae quibusdam vel voluptas. </div>
+        <div class="items" id = "item-2">BOX2 </div>
+        <div class="items">BOX3 </div>
+        <div class="items">BOX4 </div>
+        <div class="items">BOX5 </div>
+        <div class="items">BOX6 </div>
+        <div class="items">BOX7 </div>
+        <div class="items">BOX8 </div>
+        <div class="items">BOX9 </div>
+        <div class="items">BOX10 </div>
+        <div class="items">BOX11 </div>
+        <div class="items">BOX12 </div>
+        <div class="items">BOX13 </div>
+        <div class="items">BOX14 </div>
+        <div class="items">BOX15 </div>
+        <div class="items">BOX16 </div>
+    </div>
+    <div class = "Container2">
+        <div class="items in item-11-Container" id = "item-11">
+            <div class="nested-item">Nested box 1</div>
+            <div class="nested-item">Nested box 2</div>
+            <div class="nested-item">Nested box 3</div>
+         </div>
+        
+        <div class="items">BOX2 </div>
+        <div class="items">BOX3 </div>
+        <div class="items">BOX4 </div>
+        <div class="items">BOX5 </div>
+        <div class="items">BOX6 </div>
+        <div class="items">BOX7 </div>
+        <div class="items">BOX8 </div>
+        <div class="items">BOX9 </div>
+        <div class="items">BOX10 </div>
+        <div class="items">BOX11 </div>
+        <div class="items">BOX12 </div>
+        <div class="items">BOX13 </div>
+        <div class="items">BOX14 </div>
+        <div class="items">BOX15 </div>
+        <div class="items">BOX16 </div>
+    </div>
+
+</body>
+</html>

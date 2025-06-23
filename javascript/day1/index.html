@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: red;
+            background-color: aqua;
+
+        }
+    </style>
+    <!--  <script src="script.js"></script> -->
+    <!-- <script src="variable-datatypes.js"></script>-->
+    <!--     <script src="function.js"></script> -->
+
+
+</head>
+
+<body>
+
+    <p id="demo">dsds</p>
+    <input type="number" name="" id="num1" value=5>
+    <input type="number" name="" id="num2" value=0>
+    <button onclick="add()">Add</button>
+    <p>result:<span id="result"></span></p>
+
+    <script>
+        console.log(document.getElementById("num1"))
+
+        function add() {
+            let num1 = document.getElementById("num1").valueAsNumber
+            let num2 = document.getElementById("num2").valueAsNumber
+            let result = num1 + num2
+            document.getElementById("result").innerHTML = result
+        }
+    </script>
+    <!--   <button onclick="consoleButton()">click me</button>
+    <button onclick="consoleIconStatus()">IconStatus</button>
+    <button onclick="sum(5,4)">add</button>
+    <button onclick="sub(5,4)">sub</button>
+    <button onclick="multiple(5,4)">multiply</button>
+ -->
+
+</body>
+
+</html>
