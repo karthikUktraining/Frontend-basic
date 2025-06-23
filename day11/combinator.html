@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Combinators</title>
+    <style>
+        /* space between two element */
+        div h2 {
+            background-color: brown;
+            color: rgb(31, 30, 29);
+        }
+
+        div>p {
+            background-color: aquamarine;
+        }
+
+        /*  it applies styles for child element
+ */
+        div+p {
+            background-color: rgb(246, 123, 74);
+        }
+
+        /* single sibiling */
+
+        div~h2 {
+            background-color: blue;
+        }
+
+        /* all sibiling */
+    </style>
+</head>
+
+<body>
+    <h1>Combinator</h1>
+    <ul>
+        <li>descendant ( space)</li>
+        <li> child > </li>
+        <li>next sibling +</li>
+        <li>sunsequent -sibling ~ </li>
+    </ul>
+
+
+</body>
+
+</html>

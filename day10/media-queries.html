@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Media Query</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(125, 214, 136);
+            box-sizing: border-box;
+
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            box-sizing: border-box;
+            width: 90%;
+            height: 90vh;
+            border: 2px solid;
+            background-color: aqua;
+        }
+
+        .grid-item {
+            border: 2px solid;
+            background-color: rgb(204, 255, 0);
+
+        }
+
+        /* @media (max-width,min-width,orientation) {
+            
+        }
+ */
+        /* 
+        @media (max-width:800px) {
+            body {
+                background-color: rgb(230, 142, 142);
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width:600px) {
+            body {
+                background-color: rgb(201, 230, 142);
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+        } */
+        /*width is more the height of the screen*/
+
+        @media (orientation:landscape) {
+            body {
+                background-color: rgb(237, 162, 228);
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /*height is more the width of the screen*/
+        @media (orientation:portrait) {
+            body {
+                background-color: rgb(244, 169, 146);
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /*
+        phones <= 600px 2
+        tablets <= 800px 4
+        laptops <= 950px 6
+        big or large monitor  <= 1200px
+        */
+    </style>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item-1 grid-item">1</div>
+        <div class="grid-item-2 grid-item">2</div>
+        <div class="grid-item-3 grid-item">3</div>
+        <div class="grid-item-4 grid-item">4</div>
+        <div class="grid-item-5 grid-item">5</div>
+        <div class="grid-item-6 grid-item">6</div>
+    </div>
+
+</body>
+
+</html>

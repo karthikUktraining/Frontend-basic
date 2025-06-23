@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Custom BookMark",
+  "version": "1.0.4",
+  "description": "A basic example extension with only required keys",
+  "permissions": ["tabs","storage"],
+  "action":{
+    "default_title": "Click Me",   
+    "default_popup": "localstorage.html",
+    "default_icon": { 
+        "16":"bookmark.png"
+}
+  }
+  
+}

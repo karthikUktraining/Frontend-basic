@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>flex</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+        }
+
+        .container-flex {
+            margin: 2%;
+
+            width: 100%;
+            height: 250px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .container-flex-row {
+            margin: 2%;
+
+            width: 100%;
+            height: 250px;
+            background-color: aquamarine;
+            display: flex;
+            /*flex-direction default is row so u dont need to write flex-direction: row**/
+            flex-direction: row;
+
+        }
+
+        .container-flex-row-reverse {
+            margin: 2%;
+
+            width: 100%;
+            height: 250px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row-reverse;
+
+        }
+
+        .container-flex-column-reverse {
+            margin: 2%;
+
+            width: 100%;
+            height: 250px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+
+        .flex-item {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(222, 211, 211);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>display :flex</h2>
+    <div class="container-flex">
+        <div class="flex-item">div1</div>
+        <div class="flex-item">div2</div>
+        <div class="flex-item">div3</div>
+        <div class="flex-item">div4</div>
+    </div>
+    <div class="container-flex-row">
+        <div class="flex-item">div1</div>
+        <div class="flex-item">div2</div>
+        <div class="flex-item">div3</div>
+        <div class="flex-item">div4</div>
+    </div>
+    <div class="container-flex-row-reverse">
+        <div class="flex-item">div1</div>
+        <div class="flex-item">div2</div>
+        <div class="flex-item">div3</div>
+        <div class="flex-item">div4</div>
+    </div>
+    <div class="container-flex-column-reverse">
+        <div class="flex-item">div1</div>
+        <div class="flex-item">div2</div>
+        <div class="flex-item">div3</div>
+        <div class="flex-item">div4</div>
+    </div>
+
+</body>
+
+</html>

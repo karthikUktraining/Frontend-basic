@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semantic HTML Layout with Split Sections</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header,
+    nav,
+    footer {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 1em;
+    }
+
+    header {
+      height: 100px;
+    }
+
+    nav {
+      height: 60px;
+    }
+
+    main {
+      margin: 0.5em;
+    }
+
+    .content {
+      width: 65%;
+      float: left;
+    }
+
+    .aside {
+      width: 30%;
+      float: right;
+    }
+
+    section,
+    article {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 1em;
+      height: 160px;
+      margin-bottom: 1em;
+    }
+
+    .aside-top,
+    .aside-bottom {
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      padding: 1em;
+      height: 160px;
+      margin-bottom: 1em;
+    }
+
+    footer {
+      clear: both;
+      height: 80px;
+    }
+
+    details {
+      margin-top: 1em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Site Header</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <div class="content">
+      <section>
+        <h2>Section</h2>
+        <p>This is a section of content.</p>
+      </section>
+
+      <article>
+        <h2>Article</h2>
+        <p>This is an independent, self-contained piece of content.</p>
+
+        <details>
+          <summary>More Details</summary>
+          <p>Here are some additional details that you can toggle.</p>
+        </details>
+      </article>
+    </div>
+
+    <div class="aside">
+      <div class="aside-top">
+        <h2>Aside Top</h2>
+        <p>This is the top part of the aside content.</p>
+      </div>
+      <div class="aside-bottom">
+        <h2>Aside Bottom</h2>
+        <p>This is the bottom part of the aside content.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Example Site</p>
+  </footer>
+
+</body>
+
+</html>

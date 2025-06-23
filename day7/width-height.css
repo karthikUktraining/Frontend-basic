@@ -1,0 +1,57 @@
+/* .box{
+    border: 2px black solid;
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 25px;
+    float: left;
+}  */
+    /*
+       % 
+       px 
+       vw - view width 
+       vh- view heigth 
+       em 
+       rem  
+    
+    */
+    /*
+        width 
+        min-width
+        max-width it shouldnt go less then the max width given
+
+        height
+        min-height
+        max-height
+    */
+   *{
+    box-sizing: border-box;
+   }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(122, 122, 112);
+    }
+.box1{
+    border: 2px black solid;
+    background:yellow;
+    width:40%;
+    height: 40vh;
+    padding: 25px;
+    max-width: 20%;
+    min-width: 60%;
+    float: left;
+}
+
+.box2{
+    border: 2px black solid;
+    background:yellow;
+    width:40%;
+    height: 40vh;
+    padding: 25px;
+    max-width: 30%;
+    min-width: 50%;
+    float: left;
+
+
+}

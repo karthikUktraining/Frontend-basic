@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>flex</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+        }
+
+        .container-flex-center {
+            margin: 2%;
+
+            width: 100%;
+            display: flex;
+            height: 200px;
+            background-color: aquamarine;
+            align-items: center;
+
+        }
+
+        .container-flex-start {
+            margin: 2%;
+            display: flex;
+            width: 100%;
+            height: 200px;
+            background-color: aquamarine;
+            align-items: flex-start;
+
+        }
+
+        .container-flex-end {
+            margin: 2%;
+
+            display: flex;
+            width: 100%;
+            height: 200px;
+            background-color: aquamarine;
+            align-items: flex-end;
+
+        }
+
+        .flex-item {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(225, 188, 188);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>align-items</h2>
+    <div class="container-flex-center">
+        <div class="flex-item">div1</div>
+        <div class="flex-item">div2</div>
+        <div class="flex-item">div3</div>
+        <div class="flex-item">div4</div>
+    </div>
+    <div class="container-flex-start">
+        <div class="flex-item">div1</div>
+        <div class="flex-item">div2</div>
+        <div class="flex-item">div3</div>
+        <div class="flex-item">div4</div>
+    </div>
+    <div class="container-flex-end">
+        <div class="flex-item">div1</div>
+        <div class="flex-item">div2</div>
+        <div class="flex-item">div3</div>
+        <div class="flex-item">div4</div>
+    </div>
+
+</body>
+
+</html>

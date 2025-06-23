@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Position</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            height: 200vh;
+        }
+
+        .parent {
+            height: 50vh;
+            background-color: aqua;
+        }
+
+        .child1 {
+            background-color: rgb(150, 160, 160);
+            /* 
+            all the below position when applied will be out of html page flow
+           position: absolute; fixed in the position but will be fixed to the screen when scrolled up
+           position: fixed; fixed to width and when scolled it will stay at it position
+           position: sticky; sticky fixed to it parent or relative position and will be fixed untill its parent element is not moved out of window
+           */
+            top: 10px;
+        }
+
+        .child2 {
+            background-color: rgb(150, 160, 160);
+
+
+        }
+
+        .child3 {
+            background-color: rgb(150, 160, 160);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        Parent
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+    </div>
+
+</body>
+
+</html>

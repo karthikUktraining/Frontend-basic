@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>display-grid</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            box-sizing: border-box;
+            height: 200vh;
+            width: 100vw;
+            padding: 2%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 2.25fr .75fr;
+            gap: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 90vh;
+            border: 2px solid;
+            grid-template-areas:
+                "header header header header"
+                "aside main main side"
+                "aside footer footer side"
+            ;
+        }
+
+        .div-grid {
+            background-color: gray;
+            margin: 2%;
+        }
+
+        .grid-item-1,
+        .grid-item-2,
+        .grid-item-3,
+        .grid-item-4 {
+            grid-area: header;
+        }
+
+        .grid-item-5,
+        .grid-item-10 {
+            grid-area: aside;
+        }
+
+        .grid-item-8,
+        .grid-item-12 {
+            grid-area: side;
+        }
+
+        .grid-item-6,
+        .grid-item-7 {
+            grid-area: main;
+        }
+
+        .grid-item-9,
+        .grid-item-11 {
+            grid-area: footer;
+        }
+
+        /* .grid-item-1 {
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+
+        .grid-item-2 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+
+        .grid-item-3 {
+            grid-column-start: 2;
+            grid-column-end: -1;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item-1 div-grid">
+            1 Header
+        </div>
+        <div class="grid-item-2 div-grid">2 aside </div>
+        <div class="grid-item-3 div-grid">3 main</div>
+        <div class="grid-item-4 div-grid">4</div>
+        <div class="grid-item-5 div-grid">5</div>
+        <div class="grid-item-6 div-grid">6</div>
+        <div class="grid-item-7 div-grid">8</div>
+        <div class="grid-item-8 div-grid">9</div>
+        <div class="grid-item-9 div-grid">10</div>
+        <div class="grid-item-10 div-grid">11</div>
+        <div class="grid-item-11 div-grid">12</div>
+        <div class="grid-item-12 div-grid">13</div>
+
+    </div>
+
+</body>
+
+</html>
